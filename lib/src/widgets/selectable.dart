@@ -600,7 +600,8 @@ class SelectionStyle {
   }
 
   @override
-  int get hashCode => hashValues(
+  int get hashCode => Object.hash(
+///  int get hashCode => hashValues(
         cursorColor,
         cursorOffset,
         cursorRadius,
